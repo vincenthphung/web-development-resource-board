@@ -1,0 +1,158 @@
+/* General body styling */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  /* Light background color for better contrast */
+}
+
+/* Styling for the main heading and adding space from the top */
+header {
+  text-align: center;
+  margin: 40px 0;
+  /* Increased margin to push the header down */
+}
+
+h1 {
+  color: #222;
+  /* Darker color for better contrast */
+  font-size: 2.5rem;
+  /* Increase the font size */
+  letter-spacing: 1.5px;
+  /* Add spacing between letters for a sleek look */
+  font-weight: bold;
+  /* Make the heading bold */
+  background-color: #007bff;
+  /* Add a background color */
+  color: white;
+  /* Change text color to white for better contrast */
+  padding: 15px 20px;
+  /* Add padding around the text */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add subtle shadow */
+  width: fit-content;
+  /* Adjust the width to fit the content */
+  margin: 20px auto;
+  /* Center the heading */
+}
+
+p {
+  color: #555;
+  font-size: 1.2rem;
+  margin: 10px 0 30px;
+  line-height: 1.5;
+}
+
+/* Container for the card layout */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  /* Even space between cards */
+  padding: 20px;
+}
+
+/* Styling for each card */
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  /* Adjust card width for responsiveness */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* Ensures content inside cards is vertically aligned */
+  justify-content: space-between;
+  /* Distributes space between card content evenly */
+  transition: transform 0.3s ease;
+  /* Add smooth scaling effect */
+}
+
+/* Add hover effect for card */
+.card:hover {
+  transform: scale(1.05);
+  /* Slight scaling on hover */
+}
+
+/* Card image styling */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  /* Rounded top corners */
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Card title styling */
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Styling for description text */
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Button-like link styling */
+.card a {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for link */
+.card a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .card-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding: 10px 15px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
