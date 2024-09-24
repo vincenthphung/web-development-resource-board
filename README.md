@@ -1,6 +1,6 @@
 # Web Development Project 1 - Web Development Resource Board
 
-Submitted by: **Vincent H. Phung**
+Submitted by: **Vincent Phung**
 
 This web app: **A community board showcasing 10 unique resources related to web development, displayed in a responsive card format. Each card contains a link to an external resource for more information.**
 
